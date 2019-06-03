@@ -58,6 +58,7 @@ settings.py 安装和配置说明
 3. [可选]自定义新增白名单
 
   增量式添加新的标签和属性到白名单。
+
   ::
 
     BLEACH_WHITE_LIST = {
@@ -77,20 +78,19 @@ settings.py 安装和配置说明
   -  strip_comments (bool) – 是否剔除 HTML comments
 
 
-  BLEACH_WHITE_LIST 中的标签、属性、样式，将会以增量的形式增加在 Clean XSS 级别允许的白名单上。如果设置了 strip、strip_comments ，将覆盖默认设置。
+BLEACH_WHITE_LIST 中的标签、属性、样式，将会以增量的形式增加在 Clean XSS 级别允许的白名单上。如果设置了 strip、strip_comments ，将覆盖默认设置。
 
 4. [可选]是否打印或记录转义
 
-  为了方便调试，记录 XSS Filter 的信息，提供一个开关:
+为了方便调试，记录 XSS Filter 的信息，提供一个开关:
 
     ::
 
        BLEACH_SHOW = True
 
-  默认值为 True，可选值为 [True ，False]
+默认值为 True，可选值为 [True ，False]
 
-  如果是本地开发，转换日志将直接 print 在 Console。如果是线上，将打印为 warning  日志。
-
+如果是本地开发，转换日志将直接 print 在 Console。如果是线上，将打印为 warning 日志。
 
 xss_cleaner 豁免装饰器
 ------------------------
@@ -115,14 +115,10 @@ xss_cleaner 包提供了两个装饰器，用于豁免 XSS Filter 处理。
      def home(request):
         pass
 
-
-
-
 xss_cleaner 处理示例
 -----------------------
 
 下面使用的是默认配置： XSS_LEVEL= ‘HIGH'
-
 
  ::
 
