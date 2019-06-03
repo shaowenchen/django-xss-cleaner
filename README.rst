@@ -9,7 +9,7 @@ settings.py 安装和配置说明
 
 1. 安装中间件
 
-   添加中间件 "xss_cleaner.middlewares.CleanXssMiddleware" 到 settings 中
+添加中间件 "xss_cleaner.middlewares.CleanXssMiddleware" 到 settings 中
 
   ::
 
@@ -22,7 +22,7 @@ settings.py 安装和配置说明
 
 2. [可选]配置Clean XSS级别
 
-  默认配置为 'HIGHT'，可选参数：['LOW', 'HIGH']
+默认配置为 'HIGHT'，可选参数：['LOW', 'HIGH']
 
   ::
 
@@ -53,11 +53,11 @@ settings.py 安装和配置说明
         'strip_comments': False
     }
 
-  参数的含义，在下面会有介绍。
+参数的含义，在下面会有介绍。
 
 3. [可选]自定义新增白名单
 
-  增量式添加新的标签和属性到白名单。
+增量式添加新的标签和属性到白名单。
 
   ::
 
