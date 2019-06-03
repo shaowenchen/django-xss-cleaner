@@ -1,3 +1,8 @@
+# IDE
+.DS_Store
+.vscode/
+Pipfile
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
